@@ -18,7 +18,7 @@ def sigterm_handler(signal, frame):
 
 signal.signal(signal.SIGTERM, sigterm_handler)
 
-while(true):
+while True:
   GPIO.output(PIN,GPIO.HIGH)
   time.sleep(light_time)
   GPIO.output(PIN,GPIO.LOW)
